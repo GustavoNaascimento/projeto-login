@@ -54,9 +54,10 @@ div#formulario > h1 {
 
 div.campo{
     background-color: var(--cor-quintaria);
+    border: 2px solid #580593;
     height: 40px;
     margin: 5px 0px;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 div.campo > label{
     display: none;
@@ -90,4 +91,23 @@ form > a.link{
 }
 form > a.link:hover{
     background-color: #55788b;
+}
+div.campo > span{
+    color: white;
+    font-size: 2em;
+    width: 30px;
+    padding-left: 2px;
+}
+div.campo > input{
+    background-color: var(--cor-secundaria);
+    font-size: 1em;
+    width: calc(100% - 40px);
+    padding: 4px;
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    transform: translateY(-9.5px);
+}
+div.campo > input:focus-within{
+    background-color: white;
 }
