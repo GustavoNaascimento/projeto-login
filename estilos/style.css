@@ -7,3 +7,87 @@
     --cor-quartaria: #61869c;
     --cor-quintaria: #580593;
 }
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box ;
+}
+
+html,body{
+    background-color: var(--cor-quintaria);
+    width: 100vw;
+    height: 100vh;
+}
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    background-color: white;
+    width: 300px;
+    height: 520px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.479);
+}
+section#login > div#imagem{
+    display: block;
+    background: #580593 url(../imagens/pexels-ai25studioai-5475752.jpg) no-repeat left top;
+    background-size: cover;
+    height: 200px;
+}
+section#login > div#formulario{
+    display: block;
+    padding: 10px;
+}
+div#formulario > h1 {
+    text-align: center;
+}
+
+div.campo{
+    background-color: var(--cor-quintaria);
+    height: 40px;
+    margin: 5px 0px;
+    border-radius: 5px;
+}
+div.campo > label{
+    display: none;
+}
+form > input[type=submit] {
+    display: block;
+    background-color: white;
+    color: #61869c;
+    border: 1px solid #61869c;
+    width: 100%;
+    font-size: 1em;
+    text-align: center;
+    height: 40px;
+    border-radius: 5px;
+}
+form > input[type=submit]:hover{
+    background-color: #7aadc9;
+}
+form > a.link{
+    display: block;
+    background-color: var(--cor-quartaria);
+    color: white;
+    width: 100%;
+    font-size: 1em;
+    margin-top: 5px;
+    padding-top: 10px;
+    text-align: center;
+    height: 40px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+form > a.link:hover{
+    background-color: #55788b;
+}
